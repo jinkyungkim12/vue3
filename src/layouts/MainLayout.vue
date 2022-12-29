@@ -59,6 +59,12 @@ const linksList = [
     icon: 'school',
     to: '/table'
   },
+  {
+    title: 'Practice',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/practiceVfor'
+  },
 
 ]
 </script>

@@ -7,6 +7,7 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: 'typography', component: () => import('pages/Typography.vue') },
       { path: 'table', component: () => import('pages/Table.vue') },
+      { path: 'practiceVfor', component: () => import('pages/Vfor_practice.vue') },
     ]
   },
 
