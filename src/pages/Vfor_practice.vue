@@ -11,7 +11,7 @@
                 <q-table
                 title="Member List"
                 :rows="rows"
-                :columns="columns"
+                :columns="columns" 
                 dark
                 row-key="name"
                 />
