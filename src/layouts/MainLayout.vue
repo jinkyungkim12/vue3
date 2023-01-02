@@ -83,6 +83,18 @@ const linksList = [
     icon: 'school',
     to: '/practice4'
   },
+  {
+    title: 'Practice5',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/practice5'
+  },
+  {
+    title: 'memberList',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/memberList'
+  },
 
 ]
 </script>

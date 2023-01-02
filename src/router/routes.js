@@ -11,6 +11,9 @@ const routes = [
       { path: 'practiceComposition', component: () => import('pages/Composition_Practice.vue') },
       { path: 'memoComposition', component: () => import('pages/Memo_Composition.vue') },
       { path: 'practice4', component: () => import('pages/Practice4.vue') },
+      { path: 'practice5', component: () => import('pages/MemberList.vue') },
+      { path: 'memberList', component: () => import('pages/MemberList2.vue') },
+      { path: 'memberForm', component: () => import('pages/MemberForm.vue') },
     ]
   },
 
