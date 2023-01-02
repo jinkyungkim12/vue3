@@ -65,6 +65,24 @@ const linksList = [
     icon: 'school',
     to: '/practiceVfor'
   },
+  {
+    title: 'Practice2',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/practiceComposition'
+  },
+  {
+    title: 'Practice3',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/memoComposition'
+  },
+  {
+    title: 'Practice4',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/practice4'
+  },
 
 ]
 </script>
