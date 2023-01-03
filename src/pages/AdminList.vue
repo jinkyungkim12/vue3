@@ -1,6 +1,6 @@
 <template>
     <div class="container q-ma-xl">
-        <h4 class="text-white">사용자 관리</h4>
+        <h4 class="text-white">관리자 관리</h4>
         <div class="card">
             <div class="row q-pa-lg">
                 <div class="col-1">
@@ -30,6 +30,21 @@
                         label="전체"
                         dense
                         :options="optionsDev"
+                        bg-color="white" />
+                </div>
+                <div class="col-9"></div>
+                <div class="col-1">
+                    <p class="text-h6 text-white">권한</p>
+                </div>
+                <div class="col-2">
+                    <q-select 
+                        class="select1"
+                        rounded 
+                        outlined 
+                        v-model="model" 
+                        label="전체"
+                        dense
+                        :options="optionsAuthority"
                         bg-color="white" />
                 </div>
                 <div class="col-9"></div>
@@ -66,8 +81,8 @@
                 >
                     <template v-slot:body-cell-function="props">
                         <q-td :props="props">
-                            <q-btn icon="mode_edit" color="blue-5"></q-btn>&nbsp;
-                            <q-btn icon="delete" color="red-5"></q-btn> 
+                            <q-btn color="red-5">권한해지</q-btn>&nbsp;
+                            <q-btn color="blue-5">수정</q-btn>
                         </q-td>
                     </template>
                 </q-table>
@@ -97,6 +112,7 @@
         { name: 'phone', align: 'center', label: '연락처', field: 'phone' },
         { name: 'email', align: 'center', label: '이메일', field: 'email' },
         { name: 'regDate', align: 'center', label: '등록일', field: 'regDate'},
+        { name: 'authority', align: 'center', label: '권한', field: 'authority'},
         { name: 'function', align: 'center', label: '기능'}
     ]
 
@@ -109,6 +125,7 @@
             phone: '010-1234-1234',
             email: 'hongkd@withnetworks.com',
             regDate: '2023-02-01 10:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -119,6 +136,7 @@
             phone: '010-1234-1234',
             email: 'yuna@withnetworks.com',
             regDate: '2022-10-01 15:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -129,6 +147,7 @@
             phone: '010-1234-1234',
             email: 'sonson@withnetworks.com',
             regDate: '2021-05-01 20:15:50',
+            authority: '시스템 관리자',
             function: '기능'
         },
         {
@@ -139,6 +158,7 @@
             phone: '010-1234-1234',
             email: 'skang@withnetworks.com',
             regDate: '2020-11-01 18:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -149,6 +169,7 @@
             phone: '010-1234-1234',
             email: 'hansohee@withnetworks.com',
             regDate: '2022-09-01 15:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -159,6 +180,7 @@
             phone: '010-1234-1234',
             email: 'jin@withnetworks.com',
             regDate: '2022-01-01 13:15:50',
+            authority: '시스템 관리자',
             function: '기능'
         },
         {
@@ -169,6 +191,7 @@
             phone: '010-1234-1234',
             email: 'jmjm@withnetworks.com',
             regDate: '2023-01-01 10:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -179,6 +202,7 @@
             phone: '010-1234-1234',
             email: 'rmrm@withnetworks.com',
             regDate: '2021-11-20 10:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
         {
@@ -189,6 +213,7 @@
             phone: '010-1234-1234',
             email: 'vivi@withnetworks.com',
             regDate: '2023-01-07 10:15:50',
+            authority: '시스템 관리자',
             function: '기능'
         },
         {
@@ -199,6 +224,7 @@
             phone: '010-1234-1234',
             email: 'jhope@withnetworks.com',
             regDate: '2022-05-10 10:15:50',
+            authority: '전체 관리자',
             function: '기능'
         },
     ]
@@ -228,6 +254,9 @@
             optionsSearch: [
                 '사용자명', '아이디', '연락처', '이메일'
             ],
+            optionsAuthority: [
+                '전체 관리자', '시스템 관리자'
+            ]
         }
     }
     }

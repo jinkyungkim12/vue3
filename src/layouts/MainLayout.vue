@@ -95,6 +95,12 @@ const linksList = [
     icon: 'school',
     to: '/memberList'
   },
+  {
+    title: 'adminList',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/adminList'
+  },
 
 ]
 </script>

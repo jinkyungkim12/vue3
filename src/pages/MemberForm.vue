@@ -79,9 +79,9 @@
                 </div>
                 <div class="row justify-end q-pb-lg">
                     <div class="col-2">
-                        <router-link to="/memberList"><q-btn color="primary" class="btn">등록</q-btn></router-link>
+                        <router-link to="/memberList"><q-btn color="blue-5" class="btn">등록</q-btn></router-link>
                         &emsp;
-                        <router-link to="/memberList"><q-btn color="red" class="btn">취소</q-btn></router-link>
+                        <router-link to="/memberList"><q-btn color="red-5" class="btn">취소</q-btn></router-link>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
     }
     }
 </script>
-<style lang="scss">
+<style>
     body{
         background-color: black;
     }

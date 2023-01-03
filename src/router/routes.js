@@ -14,6 +14,7 @@ const routes = [
       { path: 'practice5', component: () => import('pages/MemberList.vue') },
       { path: 'memberList', component: () => import('pages/MemberList2.vue') },
       { path: 'memberForm', component: () => import('pages/MemberForm.vue') },
+      { path: 'adminList', component: () => import('pages/AdminList.vue') },
     ]
   },
 
